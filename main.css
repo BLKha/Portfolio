@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100&family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --textcolor:#fff;
+    --primary-color:#0ec5f8;
+    --highlight-color: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+.container{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    color: var(--textcolor);
+}
+  /* header */
+.header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+    background: #090343;
+}
+.header-logo {
+    width: 50%;
+    position: relative;
+    
+}
+.header-logo img{
+    width: 150px;
+    height: 35px;
+    margin: auto;
+}
+.header-navbar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-navbar .nav-link a{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: "";
+    font-size: 20px;
+}
+.header-navbar .nav-link a:hover{
+    color: var(--primary-color);
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--primary-color);
+}
+/* Home */
+.content-home{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+.content-home_infoAll{
+    width:50%;
+}
+.content-home_info{
+    width: 410px;
+}
+.intro_myself{
+    display: block;
+}
+.intro_myself p,
+.intro_myself span{
+    font-size: 35px;
+}
+.intro_myself .my-name{
+    font-size: 50px;
+    font-family: "Edu VIC WA NT Beginner";
+    color: var(--primary-color);
+    /* letter-spacing: 7px; */
+    padding-right: 0;
+    white-space: nowrap;
+    width: 8ch;
+    border-right: 3px solid var(--primary-color);
+    overflow: hidden;
+    animation: typing 5s steps(8) infinite alternate-reverse,
+    blink .3s step-end infinite alternate; 
+    
+}
+.intro_myself span{
+    color: yellow;
+}
+.infor{
+    width: 350px;
+    font-size: 15px;
+    font-family: "";
+}
+#content-home_infoAll .social{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary-color);
+}
+.social .social-item{
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    transition: all 1s;
+}
+.social .social-item i{
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.social .social-item:hover{
+    transform: rotateY(360deg);
+    scale: 1.1;
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+}
+
+.content-home_btn .btn{
+    margin: 0 27px;
+    padding: 10px;
+    width: 200px;
+    font-size: 18px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 5px rgba(14, 197, 248, 0.8);
+}
+            /* image */
+#image-home{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#image-home img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 30px  rgba(14, 197, 248, 1));
+    transition: all 1s;
+    cursor: pointer;
+}
+#image-home img:hover{
+    scale: 1.1;
+}
+            /* ABOUT ME */
+
+
+
+
+        /* animation */
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 8ch;
+       
+    }
+}
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
